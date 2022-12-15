@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color-background: rgb(214, 218, 219);
+  --primary-background-container: rgb(170, 178, 190);
+  --primary-color-darker: rgb(128, 171, 228);
+  --primary-color-buttom: rgb(112, 176, 230);
+  --perigo-peso3: rgba(206, 10, 10, 0.856);
+  --perigo-peso2: rgba(252, 45, 45, 0.836);
+  --perigo-peso: rgb(250, 100, 81);
+  --ideal-peso: rgba(148, 235, 90);
+  --fora-peso: rgba(255, 197, 7, 0.808);
+  --color-font-buttom: rgb(8, 13, 17);
+  --color-font-resp: rgb(0, 0, 0);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color-background);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  background: var(--primary-background-container);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+  border: none;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color-buttom);
+  color: var(--color-font-buttom);
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+/******************************************************************/
+/*************** elemento criado *********************************/
+/******************************************************************/
+#resultado{
+  text-align: center;
+}
+
+p {
+  padding: 2px;
+  border-radius: 5px;
+  height: auto;
+  font-size: larger;
+  color: var(--color-font-resp);
+}
+.obesidade3 {
+  background: var(--perigo-peso3);
+}
+
+.obesidade2 {background: var(--perigo-peso2);}
+.abaixo,.obesidade {background: var(--perigo-peso);}
+.normal{background: var(--ideal-peso);}
+.sobrepeso{background: var(--fora-peso);}
